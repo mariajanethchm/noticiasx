@@ -1,0 +1,120 @@
+:root {
+    --color-primary: #1248dd;
+    --color-green: #8be622;
+    --color-orange: #E67E22;
+    --color-greey: #ECF0F1;
+    --color-white: #FFFFFF;
+    --font-priMARY: #ddd;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+
+    .logo {
+        display: flex;
+    }
+
+    nav {
+        /* border: 1px solid blue; */
+
+
+        ul {
+            /* border: 1px solid red; */
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+
+            ;
+
+            li {
+                padding: 0.5rem;
+
+                a {
+                    text-decoration: none;
+                    color: var(--color-greey);
+                    padding: 0.5rem 1rem;
+                }
+
+                a:hover {
+                    background: var(--color-greey);
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+
+    .container-cta {
+        margin-right: 1rem;
+        border: 1px solid green;
+        padding: 0.25rem;
+        ;
+        background: var(--color-orange);
+        border-radius: 5px 5px 5px 0px;
+
+
+        button {
+            background: none;
+            border: 2px solid var(--color-white);
+            padding: 0.25rem;
+            border-radius: 5px 5px 5px 0px;
+            cursor: pointer;
+            ;
+        }
+
+        button:hover {
+            background: var(--color-white);
+            color: var(--color-primary);
+        }
+
+        button:hover {
+            background: var(--color-white);
+        }
+    }
+
+    .container-cta:has(button:hover) {
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.conteiner-2{
+    background-color: #ccd3d4fa;
+    width: 100%;
+    padding: 10px;
+    list-style-type: none;
+    text-align: center;
+    border-radius: 15px;
+}
+
+  .box{
+    border: 3px solid rgba(231, 230, 230, 0.916);
+    font-size: 30px;
+    margin: 15px;
+}
+
+ nav li {
+display: inline-flex;
+}
+
+nav a {
+ text-decoration: none;
+color: rgb(0, 0, 0);
+padding: 10px;
+width: 150px;
+}
+
+
+
